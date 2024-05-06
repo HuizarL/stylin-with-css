@@ -4,9 +4,23 @@
 
 <head>
   <meta name="viewport" content="width=device-width">
-  <title>HTMl Elements</title>
+  <title>Stylin' with CSS</title>
   <style>
-    table.my-table {
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+      html{
+   background-color:#ccc;
+}
+
+
+body {
+   font-family:Arial,sans-serif;
+   background-color:#fff;
+   max-width:960px;
+   width:90%;
+   margin:auto;
+   padding:1%;
+}
+table.my-table {
       border-collapse: collapse;
     }
 
@@ -36,19 +50,67 @@
     table.my-table tr:nth-child(odd) {
       background-color: #ffffff;
     }
+    footer {
+   clear:both;
+   text-align:center;
+}
+
+  .page-header{
+    background-color: #3f6799;
+    text-align:center;
+    font-family:'Inknut Antiqua',serif;
+    width:80%;
+    margin:auto;
+    text-shadow: 4px 4px 4px #aaa;
+
+
+}
+    /* start nav rules */
+nav{
+   text-align:center; /* centers the nav */
+}
+
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
   </style>
 </head>
 
 <body>
-  <h1>HTML Elements</h1>
-  <p>Clever content goes here</p>
-  <p>Clever content goes here</p>
-  <p> Clever content goes here</p>
+  <h1 class="page-header">Stylin' with CSS</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+
+    </ul>
+  </nav>
+  <p>This page demonstrates how to create a look and feel on our pages using CSS.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lorem, ornare eget hendrerit sed, auctor a diam. Sed posuere commodo risus. Nam ut consectetur purus, at cursus mi. Duis nec metus mattis, dapibus erat et, sodales mi. Suspendisse ut dapibus turpis, in laoreet leo. Suspendisse lobortis semper ornare. Quisque.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lorem, ornare eget hendrerit sed, auctor a diam. Sed posuere commodo risus. Nam ut consectetur purus, at cursus mi. Duis nec metus mattis, dapibus erat et, sodales mi. Suspendisse ut dapibus turpis, in laoreet leo. Suspendisse lobortis semper ornare. Quisque.</p>
   <div>
     <ul>
-      <li>Cookies</li>
-      <li>Sushi</li>
-      <li>Seafood</li>
+      <li>GIVEON</li>
+      <li>Warren Hue</li>
+      <li>Luke Chiang</li>
     </ul>
     <ol>
       <li>Avengers </li>
@@ -84,6 +146,8 @@
       <td>Doe</td>
       <td>Judy@example.org</td>
     </tr>
-  </table </body>
+  </table>
+  <footer>Copyright &copy; 2024</footer>
+</body>
 
 </html>
